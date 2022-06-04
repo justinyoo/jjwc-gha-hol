@@ -27,7 +27,7 @@ jobs:
           echo "node version: $(node --version)"
 
       - name: Say Hello only from Ubuntu
-        if: matrix.os == "ubuntu-latest"
+        if: matrix.os == 'ubuntu-latest'
         shell: bash
         run: |
           echo "Hello, from ${{ matrix.os }}"

@@ -16,6 +16,7 @@ jobs:
 
   second_job:
     name: 'Second Job'
+    needs: first_job
 
     runs-on: ubuntu-latest
 

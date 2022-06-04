@@ -25,3 +25,15 @@ jobs:
         shell: bash
         run: |
           echo "Lorm Ipsum"
+
+  third_job:
+    name: 'Third Job'
+    needs: first_job
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Say Hello from Third Job
+        shell: bash
+        run: |
+          echo "Lorm Ipsum"

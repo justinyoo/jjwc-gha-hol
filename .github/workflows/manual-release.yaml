@@ -16,6 +16,7 @@ jobs:
 
   call_release:
     uses: ./.github/workflows/cd.yaml
+    needs: call_build
     with:
       title: ${{ github.event.inputs.title }}
       artifact_name: apiapp

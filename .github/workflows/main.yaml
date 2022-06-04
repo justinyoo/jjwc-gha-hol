@@ -28,7 +28,7 @@ jobs:
 
   third_job:
     name: 'Third Job'
-    needs: first_job
+    needs: second_job
 
     runs-on: ubuntu-latest
 
